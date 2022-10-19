@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage[table,dvipsnames]{xcolor}
+\usepackage{afterpage}
+\usepackage{fix-cm}
+
+\usepackage{sectsty}
+
+\definecolor{UoDBlue}{RGB}{0, 105, 181}
+\definecolor{UoDDarkBlue}{RGB}{0, 105, 181}
+\definecolor{UoDLightBlue}{RGB}{0, 105, 181}
+
+\usepackage{fontspec}
+\setromanfont{BaxterSans}[
+    Path=./Baxter/,
+    Extension = .otf,
+    UprightFont=*-Regular,
+    BoldFont=*-Bold,
+    ItalicFont=*-RegularItalic,
+    BoldItalicFont=*-BoldItalic
+    ]
+    
+\sectionfont{\color{UoDBlue}}
+\subsectionfont{\color{UoDBlue}}
+
+
+\begin{document}
+
+\input{title}
+
+\input{sections/template}
+
+
+\end{document}
